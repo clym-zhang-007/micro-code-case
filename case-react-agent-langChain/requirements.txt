@@ -1,0 +1,4 @@
+langchain==1.0.3
+langchain-community==0.4.1
+langchain-classic==1.0.4
+jieba==0.42.1
