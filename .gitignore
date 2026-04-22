@@ -43,3 +43,62 @@ Thumbs.db
 # Environment files
 .env
 **/.env
+.env.*
+!.env.example
+!.env.sample
+
+# Python runtime artifacts
+*.pid
+*.seed
+
+# Local data and model artifacts
+models/
+**/models/
+*.pdf
+vector_db/
+vector_db_hybrid/
+**/vector_db/
+**/vector_db_hybrid/
+store/
+**/store/
+index/
+**/index/
+workspace/
+**/workspace/
+image_show/
+**/image_show/
+
+# Retrieval / embedding caches
+*.faiss
+*.pkl
+*.npy
+*.bin
+
+# Temporary model and notebook/runtime files
+kernel_connection_file_*.json
+launch_kernel_*.py
+
+# Generated media outputs
+*.png
+*.jpg
+*.jpeg
+
+# Local large assets and private documents
+*.txt
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+*.ppt
+*.pptx
+*.pdf
+
+# Video artifacts
+*.mp4
+
+# Local planning and internal docs
+micro-code-case-case分类与skill清单.md
+micro-code-case-skill-harness-建议.md
