@@ -286,7 +286,7 @@ def init_agent_service():
     except Exception as e:
         print(f"保险问答助手初始化失败 (ES向量连接问题): {str(e)}")
         print("尝试使用ES常规检索...")
-        # 如果向量检索失败，尝试使用ES常规检索
+        # 如果向量检索失败，尝试使用ES常规关键字检索
         try:
             rag_cfg_fallback = {
                 'use_es': True,

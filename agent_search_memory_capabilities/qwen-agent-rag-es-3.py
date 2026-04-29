@@ -259,7 +259,7 @@ def init_agent_service():
         except Exception as fallback_error:
             print(f"ES检索也失败: {str(fallback_error)}")
             print("尝试使用默认检索配置...")
-            # 最终降级到默认配置
+            # 最终降级到默认配置 --- 内存/向量库
             try:
                 bot = Assistant(
                     llm=llm_cfg,
