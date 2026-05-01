@@ -1,0 +1,9 @@
+# PDF files
+*.pdf
+
+# Datasets
+【数据集】中文医疗数据/
+
+# Notes
+笔记*.txt
+

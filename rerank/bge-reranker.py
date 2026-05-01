@@ -12,6 +12,8 @@ model_dir = snapshot_download('BAAI/bge-reranker-large', cache_dir='/root/autodl
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
+
+# 跑一下 AutoConfig.from_pretrained(...).architectures，它会告诉你该用哪个加载类
 tokenizer = AutoTokenizer.from_pretrained('/root/autodl-tmp/models/BAAI/bge-reranker-large')
 model = AutoModelForSequenceClassification.from_pretrained('/root/autodl-tmp/models/BAAI/bge-reranker-large')
 # 设置模型为评估模式
